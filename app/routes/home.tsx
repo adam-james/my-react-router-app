@@ -1,13 +1,17 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Snowglobe } from "../snowglobe/Snowglobe";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Snowglobe" },
+    { name: "description", content: "A fun interactive snowglobe animation" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div className="w-screen h-screen bg-[#050520] overflow-hidden">
+      <Snowglobe />
+    </div>
+  );
 }
