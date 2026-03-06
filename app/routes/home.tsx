@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import TicTacToe from "../game/tic-tac-toe";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Sunset Tic Tac Toe" },
+    { name: "description", content: "A beautiful sunset-themed tic-tac-toe game" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <TicTacToe />;
 }
