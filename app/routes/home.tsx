@@ -1,13 +1,16 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { DayPlanner } from "../planner/day-planner";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Today — Day Planner" },
+    {
+      name: "description",
+      content: "Focus on what matters most today.",
+    },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <DayPlanner />;
 }
