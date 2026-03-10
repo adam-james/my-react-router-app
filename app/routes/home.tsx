@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import AlarmClock from "../components/alarm-clock";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Sunrise Alarm Clock" },
+    { name: "description", content: "A beautiful alarm clock with a sunrise vibe" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <AlarmClock />;
 }
