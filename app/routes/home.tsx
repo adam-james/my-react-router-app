@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import BlackjackGame from "../blackjack/game";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Blackjack | Ocean Breeze Casino" },
+    { name: "description", content: "A chill blackjack game with ocean vibes" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <BlackjackGame />;
 }
